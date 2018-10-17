@@ -24,11 +24,8 @@ nextyeardate = int(date3) + 1
 datenextyear = datetime(year = nextyeardate, month = month_input, day = day_input)
 days_left = datenextyear - today_date
 day_left = days_left.days
-
+total_seconds_lived = total.total_seconds()
 print("\n")
 print("Hi", name)
-print("You have lived ",total.days,"days")
-total2 = total.total_seconds()
-print("and")
-print("You have lived ", total2,"seconds")
-print("You have",day_left,"to your next birthday")
+print("You have lived ",total.days,"days, which equals to", total_seconds_lived,"seconds on earth")
+print("You have",day_left," days to your next birthday and your next birthday is",datenextyear.strftime("%b/%d/%Y"))
