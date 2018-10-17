@@ -1,0 +1,13 @@
+def is_even(n): 
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+# Test the number
+x = int(input("Enter the number to confirm if it\'s odd or even: "))
+
+if is_even(x):
+    print("Number is even")
+else:
+    print("Number is odd")
