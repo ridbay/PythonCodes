@@ -1,0 +1,8 @@
+from random import randint, randrange
+
+def die_roller (n):
+    return (randrange(1, n))
+
+
+# roll a die
+print(die_roller(6))
