@@ -1,0 +1,25 @@
+# The Body Mass Index (BMI) measures the body fat using the weight and height of a person. 
+#The BMI is used to classify adults into categories as in the following table.
+
+#solicit user's weight input
+ 
+weight = input("Enter your weight in \'kg\': ")
+height = input("Enter your height in \'m\': ")
+
+#convert the inputs from string to float
+weight_int = float(weight)
+height_int = float(height)
+
+#calculate  BMI = weight (in kilograms) / height (in meters) ^2
+bmi = weight_int/(height_int *2)
+
+if (bmi > 0 ) and (bmi < 18.5):
+    print("Underweight")
+elif (bmi >= 18.5 ) and (bmi <= 24.9):
+    print("Normal Weight")
+elif (bmi >= 25 ) and (bmi <= 29.9):
+    print("Overweight")
+elif (bmi >= 30 ):
+    print("Obese")
+else:
+    print("Your weight can\'t be calculate")
